@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="About Us page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>About Us</title>
+</head>
+
+<body class="about-bg pb-5">
+    <div id="ceo-popup"
+        class="absolute max-w-xl w-full centered bg-green-200 rounded-xl md:pt-5 md:p-10 pl-5 pb-5 md:pl-10  z-10 hidden fadingIn">
+        <button id="ceo-close"><img class="w-7 absolute right-5 top-5" src="./pics//close.webp"
+                alt="close sign"></button>
+
+        <h3 class="text-black text-3xl  font-bold my-3">Andrew Kirk</h3>
+        <p class="font-semibold text-lg">
+        <ul>
+            <li class="md:text-base sm:text-sm ">Founder and CEO of
+                Optimize AI.
+            </li>
+            <li class="md:text-base sm:text-sm ">
+                Extensive experience in technology and sales, with previous success at fintech
+                startup DailyPay.
+            </li>
+        </ul>
+        </p>
+    </div>
+    <div id="cto-popup"
+        class="absolute max-w-xl w-full centered bg-green-200 rounded-xl md:pt-5 md:p-10 pl-5 pb-5 md:pl-10  z-10 hidden fadingIn">
+        <button id="cto-close"><img class="w-7 absolute right-5 top-5" src="./pics/close.webp"
+                alt="close sign"></button>
+        <h3 class="text-black text-3xl font-bold my-3">Arpit Gupta</h3>
+        <p class="font-semibold text-lg">
+        <ul>
+            <li>Amazon - Head of New
+                Initiatives (Built three teams
+                namely retail customer
+                experience, AWS ML and
+                AMZN Smile).
+            </li>
+            <li>
+                Walmart- Senior Director
+                (Helped launch Glass Omni
+                Commerce platform,
+                resulting in new revenue of
+                550M$, cut costs by 10%).
+            </li>
+        </ul>
+        </p>
+    </div>
+    <div id="engineer1-popup"
+        class="aabsolute max-w-xl w-full centered bg-green-200 rounded-xl md:pt-5 md:p-10 pl-5 pb-5  md:pl-10 hidden fadingIn">
+        <button id="engineer1-close"><img class="w-7 absolute right-5 top-5" src="./pics//close.webp"
+                alt="close sign"></button>
+        <h3 class="text-black text-3xl font-bold my-3">Charles Nguyen</h3>
+        <p class="font-semibold text-lg">
+        <ul>
+            <li>Skilled Principal Software
+                Engineer.
+            </li>
+            <li>
+                Drove significant innovations at Entertainment Partners
+                and Synacor, Enhancing user engagement and boosting ad revenue through
+                development expertise.
+            </li>
+        </ul>
+        </p>
+    </div>
+    <div id="engineer2-popup"
+        class="absolute max-w-xl w-full centered bg-green-200 rounded-xl md:pt-5 md:p-10 pl-5 pb-5 md:pl-10 hidden fadingIn">
+        <button id="engineer2-close"><img class="w-7 absolute right-5 top-5" src="./pics/close.webp"
+                alt="close sign"></button>
+        <h3 class="text-black text-3xl font-bold my-3">Eric Crook</h3>
+        <p class="font-semibold text-lg">
+        <ul>
+            <li>Former CTO, Dorian.
+            </li>
+            <li>
+                Enhanced gaming and entertainment platforms, coupled with pivotal contributions
+                in analytics and system automation, drove significant revenue growth and
+                operational efficiency at Dorian and MSMCI.
+            </li>
+        </ul>
+        </p>
+    </div>
+    <div id="advisor-popup"
+        class="absolute max-w-xl w-full centered bg-green-200 rounded-xl md:pt-5 md:p-10 pl-5 pb-5 md:pl-10 z-10 hidden fadingIn">
+        <button id="advisor-close"><img class="w-7 absolute right-5 top-5" src="./pics/close.webp"
+                alt="close sign"></button>
+        <h3 class="text-black text-3xl font-bold my-3">Simon Gelinas</h3>
+        <p class="font-semibold text-lg">
+        <ul>
+            <li>Founder of SiGE.AI: Head of Data Science and Machine Learning.
+            </li>
+            <li>
+                Over 10 years of experience in the ML field, led previous startup engineering team
+                from prelaunch to over $1 billion in AUC and acquisition.
+            </li>
+        </ul>
+        </p>
+    </div>
+
+
+    <!-- header section -->
+    <header>
+        <div class="w-full mx-auto flex items-center justify-between md:px-5 px-2 z-50  headerabout">
+            <div class="flex items-center space-x-6 text-white">
+                <a href="./index.html"><img class="logo-size  md:max-w-60" src="./pics/main-logo.png" alt="logo"></a>
+                <div class="md:flex hidden">
+                    <div class="flex items-center space-x-4 text-white">
+                        <a href="./index.html">
+                            <h3>Home</h3>
+                        </a>
+                        <a href="./platform.html">
+                            <h3>Platform</h3>
+                        </a>
+                        <a href="./aboutus.html">
+                            <h3>About Us</h3>
+                        </a>
+                        <a href="./contact.html">
+                            <h3>Contact Us</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="menu-hamburger-mobile-about"
+                class="md:hidden hamburger-about block outline-none cursor-pointer z-50 absolute right-5 top-7">
+                <div class="top-line-about"></div>
+                <div class="middle-line-about"></div>
+                <div class="last-line-about"></div>
+            </div>
+            <div id="menu-content-mobile-about"
+                class="md:hidden absolute top-0 right-0 w-56 h-fit pb-10 bg-blue-800 hidden">
+                <div class="flex flex-col items-start pt-16 pl-6 space-y-8 font-semibold text-white">
+                    <a href="./index.html">
+                        <h3>Home</h3>
+                    </a>
+                    <a href="./platform.html">
+                        <h3>Platform</h3>
+                    </a>
+                    <a href="./aboutus.html">
+                        <h3>About Us</h3>
+                    </a>
+                    <a href="./contact.html">
+                        <h3>Contact Us</h3>
+                    </a>
+                    <a href="./contact.html"><button
+                            class="bg-green-700 rounded-md px-4 py-2 font-semibold text-white">Sign Up</button></a>
+                    <a href="https://calendly.com/optimizeai-pxw/30min?month=2024-04"><button
+                            class="bg-green-700 text-white rounded-md px-4 py-2 font-semibold">Book a Demo</button></a>
+                </div>
+            </div>
+            <div class="md:flex hidden">
+                <div class="flex items-center justify-center space-x-4">
+                    <a href="./contact.html"><button class="bg-white text-black rounded-md px-4 py-2 font-semibold">Sign
+                            Up</button></a>
+                    <a href="https://calendly.com/optimizeai-pxw/30min?month=2024-04"><button
+                            class="bg-green-700 text-white rounded-md px-4 py-2 font-semibold">Book a Demo</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- second section -->
+    <div class="pt-32 relative mx-auto">
+        <h1 class="md:text-6xl text-3xl font-bold text-center text-white px-3">Shaping Tomorrow Today</h1>
+
+
+        <div class="max-w-2xl mx-auto  text-center flex flex-col items-center space-y-6 py-10 text-white">
+            <h2 class="font-bold md:text-6xl text-3xl capitalize">welcome to our team</h2>
+            <div class="border-b-green-300 border-b-2 w-20 mx-auto"></div>
+            <h3 class="text-xl font-semibold">We Bring Quality with Decades of Experience</h3>
+        </div>
+    </div>
+
+    <!-- team section -->
+    <div
+        class="flex lg:flex-row lg:items-start flex-col items-center  justify-center lg:space-y-0  lg:space-x-5 space-y-5 space-x-0  w-full mx-auto px-6 ">
+        <div
+            class="flex md:flex-row md:items-start flex-col items-center justify-center md:space-x-5 md:space-y-0 space-y-5 space-x-0 w-full lg:w-fit">
+            <div
+                class=" flex sm:w-64 md:w-2/6  lg:w-fit flex-col bg-bgoffwhite pb-2 items-center space-y-4 rounded-xl pad5">
+                <img class="andrew rounded-full" src="./pics/andrew.png" alt="CEO pic">
+                <h3 class="text-bgheader smaller-title font-semibold">Andrew Kirk</h3>
+                <h4 class="text-bgheader smaller font-semibold">Founder and CEO</h4>
+                <button id="ceo-bio"
+                    class="bg-blue-950 text-white py-1 px-4 rounded-md text-base font-semibold">Bio</button>
+                <h4 class="text-bgheader smaller font-semibold md:pb-3 lg:pb-0">andrew@optimizeai.net</h4>
+
+            </div>
+            <div
+                class="flex sm:w-64 md:w-2/6 lg:w-fit flex-col bg-bgoffwhite  py-4 items-center space-y-4 rounded-xl pad7">
+                <img class="andrew rounded-full" src="./pics/arpit.png" alt="CEO pic">
+                <h3 class="text-bgheader smaller-title font-semibold">Arpit Gupta</h3>
+                <h4 class="text-bgheader smaller font-semibold">CTO</h4>
+                <button id="cto-bio"
+                    class="bg-blue-950 text-white py-1 px-4 rounded-md text-base font-semibold">Bio</button>
+                <h4 class="text-bgheader smaller font-semibold">arpit@optimizeai.net</h4>
+            </div>
+        </div>
+
+        <div
+            class="flex md:flex-row md:items-start flex-col items-center justify-center md:space-x-5 md:space-y-0 space-y-5 space-x-0 w-full lg:w-fit">
+            <div class="  flex sm:w-64 md:w-2/6 lg:w-fit flex-col bg-bgoffwhite pb-4 items-center  rounded-xl pad5">
+                <img class="andrew rounded-full" src="./pics/charles.png" alt="CEO pic">
+                <h3 class="text-bgheader smaller-title font-semibold mt-8 mb-5">Charles Nguyen</h3>
+                <h4 class="text-bgheader smaller font-semibold">Principal Engineer</h4>
+                <button id="first-engineer-bio"
+                    class="bg-blue-950 text-white py-1 px-4 rounded-md text-base font-semibold mt-4 mb-4">Bio</button>
+                <h4 class="text-bgheader smaller font-semibold">Charles@optimizeai.net</h4>
+            </div>
+            <div
+                class="  flex sm:w-64 md:w-2/6 lg:w-fit flex-col bg-bgoffwhite  pb-4 items-center space-y-4 rounded-xl pad8">
+                <img class="andrew rounded-full" src="./pics/eric.png" alt="CEO pic">
+                <h3 class="text-bgheader smaller-title font-semibold">Eric Crook</h3>
+                <h4 class="text-bgheader smaller font-semibold">Principal Engineer</h4>
+                <button id="second-engineer-bio"
+                    class="bg-blue-950 text-white py-1 px-4 rounded-md text-base font-semibold">Bio</button>
+                <h4 class="text-bgheader smaller font-semibold md:pb-3 lg:pb-0">Eric@optimizeai.net</h4>
+            </div>
+        </div>
+
+        <div
+            class="flex sm:w-64 md:w-2/6 lg:w-fit flex-col bg-bgoffwhite pt-2 pb-3 items-center space-y-4 rounded-xl pad5">
+            <img class="andrew rounded-full" src="./pics/simon.png" alt="CEO pic">
+            <h3 class="text-bgheader smaller-title font-semibold">Simon Gelinas</h3>
+            <h4 class="text-bgheader smaller font-semibold">Chief Advisor</h4>
+            <button id="advisor-bio"
+                class="bg-blue-950 text-white py-1 px-4 rounded-md text-base font-semibold">Bio</button>
+            <h4 class="text-bgheader smaller font-semibold">Simon@optimizeai.net</h4>
+        </div>
+    </div>
+    <script src="video-size.js"></script>
+    <script src="./aboutus.js"></script>
+</body>
+
+</html>

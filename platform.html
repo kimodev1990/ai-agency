@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Platform page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Platform</title>
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <div class=" w-full mx-auto flex items-center justify-between md:px-5 px-2 z-50 primary-header bg-blue-950">
+            <div class="flex items-center space-x-6 text-white relative">
+                <a href="./index.html"><img class="logo-size  md:max-w-60" src="./pics/main-logo.png" alt="logo"></a>
+                <div class="md:flex hidden">
+                    <div class="flex items-center space-x-4 text-white">
+                        <a href="./index.html">
+                            <h3>Home</h3>
+                        </a>
+                        <a href="./platform.html">
+                            <h3>Platform</h3>
+                        </a>
+                        <a href="./aboutus.html">
+                            <h3>About Us</h3>
+                        </a>
+                        <a href="./contact.html">
+                            <h3>Contact Us</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="menu-hamburger-mobile"
+                class="md:hidden hamburger block outline-none cursor-pointer z-50 absolute right-5 top-7">
+                <div class="top-line"></div>
+                <div class="middle-line"></div>
+                <div class="last-line"></div>
+            </div>
+            <div id="menu-content-mobile" class="md:hidden absolute top-0 right-0 w-56 h-fit pb-10 bg-blue-800 hidden">
+                <div class="flex flex-col items-start pt-16 pl-6 space-y-8 font-semibold text-white">
+                    <a href="./index.html">
+                        <h3>Home</h3>
+                    </a>
+                    <a href="./platform.html">
+                        <h3>Platform</h3>
+                    </a>
+                    <a href="./aboutus.html">
+                        <h3>About Us</h3>
+                    </a>
+                    <a href="./contact.html">
+                        <h3>Contact Us</h3>
+                    </a>
+                    <a href="./contact.html"><button
+                            class="bg-green-700 rounded-md px-4 py-2 font-semibold text-white">Sign Up</button></a>
+                    <a href="https://calendly.com/optimizeai-pxw/30min?month=2024-04"><button
+                            class="bg-green-700 text-white rounded-md px-4 py-2 font-semibold">Book a Demo</button></a>
+                </div>
+            </div>
+            <div class="md:flex hidden">
+                <div class="flex items-center justify-center space-x-4">
+                    <a href="./contact.html"><button class="bg-white text-black rounded-md px-4 py-2 font-semibold">Sign
+                            Up</button></a>
+                    <a href="https://calendly.com/optimizeai-pxw/30min?month=2024-04"><button
+                            class="bg-green-700 text-white rounded-md px-4 py-2 font-semibold">Book a Demo</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- data section  -->
+    <section>
+        <div
+            class="flex md:flex-row flex-col md:items-start items-center justify-center md:space-x-6 space-x-0 space-y-6 md:space-y-0 md:px-20 px-6 pt-24">
+            <div class="md:w-1/2 w-full text-center flex flex-col md:space-y-10 space-y-5">
+                <h2 class="md:text-4xl text-2xl font-semibold">Optimize AI Platform Overview</h2>
+                <h3 class="md:text-base text-sm font-semibold">Discover how Optimize AI transforms complex data into
+                    straightforward,
+                    strategic
+                    actions. Complete the below form to get an in-depth platform overview.</h3>
+                <div class="flex flex-col md:items-start items-center">
+                    <div class="text-bgheader font-semibold">
+                        <img class="inline mr-4" src="./pics/iconizer-email-logo.svg" alt="email logo">
+                        contact@optimizeai.net
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 w-full pb-6 md:pb-0">
+                <form id="first-form" class="flex flex-col items-center space-y-5">
+                    <!-- first input data -->
+                    <div
+                        class="w-full flex md:flex-row flex-col items-center md:space-x-2 space-x-0 space-y-2 md:space-y-0">
+                        <div class="md:w-1/2 w-full flex flex-col justify-center space-y-2">
+                            <h3 class="md:text-center text-left">Name</h3>
+                            <input
+                                class=" outline-none border-2 border-gray-300 placeholder:text-gray-500 p-2 rounded-lg"
+                                placeholder="Name" id="name-form" name="name" type="text">
+                        </div>
+                        <div class="md:w-1/2 w-full flex flex-col justify-center space-y-2">
+                            <h3 class="md:text-center text-left">Company</h3>
+                            <input
+                                class=" outline-none border-2 border-gray-300 placeholder:text-gray-500 p-2 rounded-lg"
+                                placeholder="Company" id="company-form" name="company" type="text">
+                        </div>
+                    </div>
+                    <!-- second input data -->
+                    <div
+                        class="w-full flex md:flex-row flex-col items-center md:space-x-2 space-x-0 space-y-2 md:space-y-0">
+                        <div class="md:w-1/2 w-full flex flex-col justify-start space-y-2 relative">
+                            <h3 class="md:text-center text-left">Email</h3>
+                            <input
+                                class=" outline-none border-2 border-gray-300 placeholder:text-gray-500 p-2 rounded-lg"
+                                placeholder="your@company.com" id="email-form" name="email" type="text">
+                            <h2 id="invalid-email" class="text-red-500 text-sm text-right absolute right-0 hidden">
+                                Invalid
+                                Form</h2>
+                        </div>
+                        <div class="md:w-1/2 w-full flex flex-col justify-center space-y-2">
+                            <h3 class="md:text-center text-left">Phone Number</h3>
+                            <input
+                                class=" outline-none border-2 border-gray-300 placeholder:text-gray-500 p-2 rounded-lg"
+                                placeholder="+1 (555) 000-0000" id="number-form" name="number" type="text">
+                        </div>
+                    </div>
+                    <!-- third input data -->
+                    <div class="w-full flex items-center space-x-2">
+                        <div class=" w-full flex flex-col justify-center space-y-2">
+                            <h3 class="md:text-center text-left">Which best describes you?</h3>
+                            <input
+                                class=" outline-none border-2 border-gray-300 placeholder:text-gray-500 p-2 rounded-lg"
+                                placeholder="Head of Data Science" id="description-form" name="description" type="text">
+                        </div>
+                    </div>
+                    <!-- interested section -->
+                    <div class="w-full flex items-center space-x-2">
+                        <div class=" w-full flex flex-col justify-center space-y-2">
+                            <h3 class="md:text-center text-left">What interested you?</h3>
+                            <textarea
+                                class="overflow-scroll overflow-x-hidden overflow-y-auto resize-none outline-none border-2 border-gray-300 placeholder:text-gray-500 p-2 rounded-lg"
+                                placeholder="Type your message" id="message-form" name="message" cols="30"
+                                rows="7"></textarea>
+                        </div>
+                    </div>
+                    <!-- submit button -->
+                    <button class="text-lg w-full bg-blue-950 text-white font-semibold rounded-lg p-3">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./platform.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
