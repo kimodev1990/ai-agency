@@ -52,13 +52,13 @@
   font-size: clamp(2.188rem, 0.563rem + 8.667vw, 3rem);
 }
 
-.reveal {
+/* .reveal {
   overflow: hidden;
   animation: animate 3s linear infinite;
   animation-delay: 1500ms;
-}
+} */
 
-@keyframes animate {
+/* @keyframes animate {
   0% {
     width: 0px;
     height: 72px;
@@ -73,7 +73,7 @@
     width: 0px;
     height: 72px;
   }
-}
+} */
 
 .hero-background {
   position: absolute;
